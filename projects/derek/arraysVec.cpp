@@ -1,34 +1,12 @@
-/* https://code.visualstudio.com/docs/cpp/config-mingw
-1.Terminal > Configure Default Build Task. 
-2. Choose g++.exe build active file    //Create a tasks.json file 
-3.Ctrl+Shift+B or from the Terminal main menu choose Run Build Task.
-4. Create a new terminal using the + button
-5. Run  the  program './program name"
-
-Debug
- 1. Run > Add Configuration... and then choose C++ (GDB/LLDB).
- 2. Choose g++.exe build and debug active file.
-
- Start a debugging session#
-
-  1.Go back to helloworld.cpp so that it is the active file.
-  2 Run > Start Debugging.   F5
-
-
-
-*/
-
-
-
-#include <cstdlib>
+ #include <cstdlib>
 #include <iostream>
 #include <string>
 #include <vector>
 #include <sstream>
- 
-int main() {
 
-// An array is a collection of data of the same type
+int main() {
+     
+    // An array is a collection of data of the same type
     // Declare an array of ints with the value of 1
     // Once the size is defined it can't change
     int arrnNums[10] = {1};
@@ -41,11 +19,15 @@ int main() {
     
     // Access array values using indexes starting with 0
     std::cout << "1st Value : " << arrnNums3[0] << "\n";
-    
+    int myNumbers[5]  = {10, 20, 30, 40, 50};
+    std::cout << "sizeof(myNumbers) = " << sizeof(myNumbers)<< "\n";
+    //Find Number of elements 
+    int getArrayLength = sizeof(myNumbers) / sizeof(int);
+    std::cout <<"  Number of elements = "<< getArrayLength << "\n";
     // Change a value
     arrnNums3[0] = 7;
     std::cout << "1st Value : " << arrnNums3[0] << "\n";
-    
+
     // Get array size by getting the number of bytes
     // set aside for the array and then divide by the size
     // of the 1st element
@@ -75,7 +57,8 @@ int main() {
     vecnRandNums.push_back(30);
     
     // Get size of vector
-    std::cout << "Vector Size : " << vecnRandNums.size() << "\n";
+
+     std::cout << "Vector Size : " << vecnRandNums.size() << "\n";
     
     // Get last value
     std::cout << "Last Index : " << 
@@ -108,16 +91,4 @@ int main() {
         vecsWords.push_back(sIndivStr);
     }
     
-    // Cycle through each index in the vector and print
-    // out each word 
-    for(int i = 0; i < vecsWords.size(); ++i){
-        std::cout << vecsWords[i] << "\n";
-    }
-    
-    return 0;
-}
-
-
-
-
- 
+} 

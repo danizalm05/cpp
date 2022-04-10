@@ -1,8 +1,19 @@
 /*
 How to Download and Install C Cpp Toolset ( gcc g++ gdb )
  in Windows 10 using mingw-w64 and msys2
-https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
+1.Install  C Cpp Toolset
+   https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
 
+2. Set up Visual Studio Code for C and C++ Programming
+    https://www.youtube.com/watch?v=77v-Poud_io
+
+
+1.File > Add folder to workspace... and create a new  folder
+2.File > Save work space as... and chose a name
+3. Add new file
+4. File > Preferences  > Settings > Extensions > Run Code Configurator
+    and serach and check 'run in  terminal' 	
+==================================================================	
 https://code.visualstudio.com/docs/cpp/config-mingw
 1. Terminal > Configure Default Build Task. 
 2. Choose g++.exe build active file    //Create a tasks.json file 
@@ -18,26 +29,4 @@ Debug
 
   1.Go back to helloworld.cpp so that it is the active file.
   2 Run > Start Debugging.   F5
-
-*/
-//Learn modern C++ 20 programming in this comprehensive course
-//https://www.youtube.com/watch?v=8jLOx1hD3_o&t=40s    01:43:00
-
-
-
-
-#include <iostream>
-#include <vector>
-#include <string>
-
-using namespace std;
-
-int main()
-{
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
  
-    for (const string& word : msg) {
-        cout << word << " ";
-    }
-    cout << endl;
-}
