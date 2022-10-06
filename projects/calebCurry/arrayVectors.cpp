@@ -20,11 +20,17 @@
 
 main(){
     
-  int guesses[] = {10, 13 , 54, 42, 12,12,13};  
-  std::cout << guesses[3]<< std::endl;  
-  guesses[3] = 300;  
-  std::cout << guesses[3]<< std::endl;    
-     
+  int guesses01[] = {10, 13 , 54, 42, 12 };  
+  std::cout << guesses01[3]<< std::endl;  
+  guesses01[3] = 300;  
+  std::cout << guesses01[3]<< std::endl;    
+
+  int size = sizeof(guesses01)/sizeof(int) ;
+  std::cout <<"size = " << size<< std::endl; 
+
+   for(int i=0; i<size; i++){ 
+      std::cout << guesses01[i]<< ',';
+  }  
   return 0;   
 }//main
    
