@@ -8,6 +8,8 @@
  https://www.youtube.com/watch?v=_afeydHJ9Fs&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=49
  48 - Fill Array from Input
  https://www.youtube.com/watch?v=5NdWaGzSNes&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=50 
+ 49 - Using an Array to Keep Track of Guesses
+ https://www.youtube.com/watch?v=aAMIig6zg0A&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=51
    g++ arrayVectors.cpp -o array  
   
    */
@@ -21,7 +23,7 @@
   
 void print_array(int array[], int size)
 {
-  std::cout << sizeof(array)<<"  size =  "<< size <<std::endl;  //Print the size of a pointer to an array
+  std::cout <<"sizeof(array) =  " << sizeof(array)<<"  size =  "<< size <<std::endl;  //Print the size of a pointer to an array
   for(int i=0; i<size; i++){ 
       std::cout <<array[i]<< '-';
   }  
@@ -31,17 +33,33 @@ void print_array(int array[], int size)
 main(){
     
   int guesses01[] = {10, 13 , 54, 42, 12 };   
-  std::cout << sizeof(guesses01)<< std::endl;  
+  std::cout <<"sizeof(guesses01) = " << sizeof(guesses01)<< std::endl;  
   int size = sizeof(guesses01)/sizeof(int) ;
   print_array(guesses01, size  );
 
   guesses01[3] = 300;  
   std::cout << guesses01[3]<< std::endl;    
-
-  
   std::cout <<"size = " << size<< std::endl; 
 
-   
+  //Fill Array from Input
+  std::cout <<"\n\nFill Array from Input\n " <<  std::endl; 
+
+  const int size02 =100;
+  int gusses02[size02];
+  int count = 0;
+  for (int i =0; i<size02;i++){
+     //std::cout <<i << "= "<< gusses02[i]<< std::endl; 
+     if(std::cin>>  gusses02[i]){//if input is integer
+            count++;
+     }
+     else{ //invalid character (not integer)
+       std::cout << "Invalid character,end of input. "<<   
+        std::endl;
+       break;
+     }
+  }
+  print_array(gusses02, count  );
+  std::cin.clear();//Clear last (invalid) input
   return 0;   
 }//main
    
