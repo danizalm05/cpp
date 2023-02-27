@@ -44,7 +44,7 @@ main(){
   //Fill Array from Input
   std::cout <<"\n\nFill Array from Input\n " <<  std::endl; 
 
-  const int size02 =100;
+  const int size02 =300;
   int gusses02[size02];
   int count = 0;
   for (int i =0; i<size02;i++){
@@ -58,9 +58,11 @@ main(){
        break;
      }
   }
-  print_array(gusses02, count  );
+ 
   std::cin.clear();//Clear last (invalid) input
-  return 0;   
+ 
+   print_array(gusses02, count  );  
+   return 0;  
 }//main
    
     
