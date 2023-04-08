@@ -10,11 +10,19 @@
  https://www.youtube.com/watch?v=5NdWaGzSNes&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=50 
  49 - Using an Array to Keep Track of Guesses
  https://www.youtube.com/watch?v=aAMIig6zg0A&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=51
-   g++ arrayVectors.cpp -o array  
   
+ 50 - Intro to vectors
+ https://www.youtube.com/watch?v=YErKhAYBj2A&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=52
+ g++ arrayVectors.cpp -o array  
+
+ 51 - Creating a Vector
+https://www.youtube.com/watch?v=Fm9otubOsqQ&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=53
+ 
+ 
    */
 
 #include <iostream>
+#include <vector>
 #include <climits>
 #include <cmath>
 #include <string>
@@ -31,10 +39,20 @@ void print_array(int array[], int size)
 
 }//print_array
 main(){
-    
+
+  std::vector<int>  data{1,2,3};
+  data.push_back(12);
+  std::cout << data[1] << std::endl;
+  std::cout << data[data.size() -1] << std::endl;
+  data.pop_back();//Remove last  item
+
   int guesses01[] = {10, 13 , 54, 42, 12 };   
   std::cout <<"sizeof(guesses01) = " << sizeof(guesses01)<< std::endl;  
   int size = sizeof(guesses01)/sizeof(int) ;
+  
+  
+  
+  
   print_array(guesses01, size  );
 
   guesses01[3] = 300;  
