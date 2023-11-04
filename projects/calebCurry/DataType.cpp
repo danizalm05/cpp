@@ -32,7 +32,7 @@ main(){
     unsigned long cc;
     unsigned long long dd;
 
-    cout <<"Max short number = " << SHRT_MAX << std::endl ;
+    cout <<"    Max short number = " << SHRT_MAX << std::endl ;
     cout <<"Min short number = " << SHRT_MIN << std::endl ;
     cout <<"sizeof(short) = " << sizeof(short) << std::endl ;
     cout <<"sizeof(int) = " << sizeof(int) << std::endl ;
