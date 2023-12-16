@@ -1,1 +1,1 @@
-g++  vect.cpp -o  vect  -std=c++11
+g++  58RangeLoop.cpp -o  RangeLoop.cpp  -std=c++11

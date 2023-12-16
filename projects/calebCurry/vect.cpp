@@ -4,7 +4,8 @@
 51: https://www.youtube.com/watch?v=Fm9otubOsqQ&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=53
 52: Passing Vectors to Functions
      https://www.youtube.com/watch?v=aUhYCyU2Meo&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=55
-  comile: 
+ 
+  compile: 
        save file
        g++  vect.cpp -o  vect  -std=c++11
   
