@@ -15,3 +15,28 @@ https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
        run : pacman -Su  # Update rest of the base packages 
  3.	   
 
+
+
+C++ Builder 11  
+--------------------------------
+https://learncplusplus.org/how-to-install-c-builder-ce-community-edition-for-your-first-project/
+
+ Download the free version of C++ Builder 11 CE Community Edition here: https://www.embarcadero.com/products/cbuilder/starter
+MECK-LVASH2-EVVTW8-DE8D 
+
+8729333
+
+ Getting Started with Embarcadero C++ Builder
+https://www.youtube.com/@hopewell480
+
+
+Build C++ GUI apps FAST! Your first C++ GUI app!   3:50
+https://www.youtube.com/watch?v=FxQTXyR4mjs&list=PL43pGnjiVwgQakzRxpt2amqN9f7-tRtc_
+
+
+
+Qt 6 With C++
+https://www.youtube.com/watch?v=smQms-2yJYc&list=PLUbFnGajtZlXbrbdlraCe3LMC_YH5abao&index=5
+
+
+https://www.qt.io/academy?tags=Install%2CGetting+started

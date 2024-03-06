@@ -14,7 +14,7 @@ Tutorial 58 - Range Based For Loop
 #include <array> 
   int main(){
   
-  int data[] = {1,2,3,4,5,6};
+  int data[] = {1,2,3,4,5,6,7};
 
   
   

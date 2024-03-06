@@ -1,1 +1,1 @@
-g++  58RangeLoop.cpp -o  RangeLoop.cpp  -std=c++11
+g++  60Filesofstream.cpp -o    fstre.exe  -std=c++11

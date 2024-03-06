@@ -1,3 +1,20 @@
+
+                        compile cpp online 
+------------------------------------
+https://www.tutorialspoint.com/compile_cpp_online.php
+https://cpp.sh/
+https://www.codechef.com/learn/topic/cpp     za g 6Gpz+l*+++3+++
+
+
+                         Installing g++
+=================-------------------------==================
+
+C++ Programming Tutorial 2 - Installing g++ and Getting Started
+ Caleb Curry
+  
+https://www.youtube.com/watch?v=aVqZ3lZD8Qk&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=4 
+ 
+
 /*
 How to Download and Install C Cpp Toolset ( gcc g++ gdb )
  in Windows 10 using mingw-w64 and msys2
@@ -29,4 +46,6 @@ Debug
 
   1.Go back to helloworld.cpp so that it is the active file.
   2 Run > Start Debugging.   F5
+  shift + F5 exit debug
+  F10 move to next line
  

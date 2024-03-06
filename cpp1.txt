@@ -1,8 +1,4 @@
-C++ Programming Tutorial 2 - Installing g++ and Getting Started
- Caleb Curry
-  
-https://www.youtube.com/watch?v=aVqZ3lZD8Qk&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=4 
- 
+
  
  
  
