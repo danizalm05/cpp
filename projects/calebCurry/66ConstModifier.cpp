@@ -16,7 +16,7 @@ void print_array(const int data[],int siza) {
     // A command  as data[i]++; will create an error massage  since it is a CONST
      //data[i]++;
      std::cout << data[i]<< "\t";
-   }
+     }
    std::cout <<"\n";
      
 }
