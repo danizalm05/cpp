@@ -1,5 +1,7 @@
   Qt6 C++ GUI Development Course ( Build GUI Apps in Qt & C++ )
 Parwiz Forogh 
  
+ 
+ 
  https://www.youtube.com/watch?v=Wi9nQTDFF4U&list=PL1FgJUcJJ03uTfN-0NVzfUSyoZtM3pUfr
  34:00
