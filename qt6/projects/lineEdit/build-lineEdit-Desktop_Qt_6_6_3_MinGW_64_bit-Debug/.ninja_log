@@ -1,0 +1,20 @@
+# ninja log v5
+2	1187	7334930520095297	lineEdit_autogen/timestamp	9f5d875db8891692
+2	1187	7334930520095297	lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+2	1187	7334930520095297	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/timestamp	9f5d875db8891692
+2	1187	7334930520095297	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+1217	5019	7334930559615277	CMakeFiles/lineEdit.dir/widget.cpp.obj	3ccb420e2f4fa717
+1188	5071	7334930560155282	CMakeFiles/lineEdit.dir/lineEdit_autogen/mocs_compilation.cpp.obj	bf08078c57923457
+1202	5199	7334930561425273	CMakeFiles/lineEdit.dir/main.cpp.obj	6acb380569214869
+5201	5542	7334930564788872	lineEdit.exe	75923b35418dc8d7
+29	329	7334937280837990	lineEdit_autogen/timestamp	9f5d875db8891692
+29	329	7334937280837990	lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+29	329	7334937280837990	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/timestamp	9f5d875db8891692
+29	329	7334937280837990	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+360	4919	7334937326707985	CMakeFiles/lineEdit.dir/main.cpp.obj	6acb380569214869
+12	299	7334937846965079	lineEdit_autogen/timestamp	9f5d875db8891692
+12	299	7334937846965079	lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+12	299	7334937846965079	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/timestamp	9f5d875db8891692
+12	299	7334937846965079	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/lineEdit/build-lineEdit-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/lineEdit_autogen/mocs_compilation.cpp	9f5d875db8891692
+327	4181	7334937885786808	CMakeFiles/lineEdit.dir/widget.cpp.obj	3ccb420e2f4fa717
+4182	4704	7334937890936867	lineEdit.exe	75923b35418dc8d7
