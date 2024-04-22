@@ -1,0 +1,11 @@
+----------------   namespace -----------------------
+namespace utils{
+   void print_vector(std::vector<int> data) {
+          for(int i =0; i< data.size();i++) {
+             cout <<" " <<data[i] << "\t";
+          }
+   }
+ }
+
+how to use:
+        utils::print_vector(data);

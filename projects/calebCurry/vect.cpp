@@ -7,7 +7,7 @@
   compile: 
        save file
        g++  vect.cpp -o  vect  -std=c++11
-  
+      ./vect
 
   https://www.geeksforgeeks.org/basic/cpp-vector/
    */

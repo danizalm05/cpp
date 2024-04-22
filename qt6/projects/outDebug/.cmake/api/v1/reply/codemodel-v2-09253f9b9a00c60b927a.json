@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2c5356554a52e2432d31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "randomGen",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "randomGen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-randomGen-Debug-fb660bcf8448f06663e1.json",
+					"name" : "randomGen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "randomGen_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-randomGen_autogen-Debug-dc1aed66af4d6eabd95a.json",
+					"name" : "randomGen_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "randomGen_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-randomGen_autogen_timestamp_deps-Debug-6ae1b4f8beafa2c8ac97.json",
+					"name" : "randomGen_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug",
+		"source" : "C:/Users/gilfm/Documents/d/cpp01/qt6/projects/randmgen/randomGen"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
