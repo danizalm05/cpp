@@ -25,7 +25,7 @@ void swap(T &a, T &b){
 } 
  
  
-//This Template is tos swap data types like arrays
+//This Template is to  swap data types like arrays
 template <typename T> 
 void swap(T a[], T b[], int size){
   for(int i = 0; i < size; i++){

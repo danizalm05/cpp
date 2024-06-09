@@ -3,6 +3,15 @@
  of any anti-virus application that runs on your system.
 
 
+                           KDABtv
+Introduction to Qt Widgets (Part 01)  
+--------- 
+https://www.youtube.com/watch?v=g7yijWiZTmI&list=PL6CJYn40gN6hgf7zCKF2Rv9Y0WoN8RVGf 
+https://github.com/KDABLabs/kdabtv/blob/master/Programming-With-Qt-Widgets/fundamentals/ex-helloworld 
+
+https://doc.qt.io/
+
+
 C:\Qt\Tools
 C:\Qt\Tools\QtCreator\bin
 
@@ -13,6 +22,8 @@ file:///C:/Qt/Tools/QtCreator/share/doc/qtcreator/qtcreator/index.html#
 C:/Qt/Tools/mingw1120_64/bin/
 
 C:\Qt\6.6.3\mingw_64\bin\windeploy.exe
+
+
 ----------------------  create standalone  --------------------
 
 Copy the exe relase version to an empty dir and run this command
@@ -55,4 +66,15 @@ utilf.o: utilf.cpp
 	g++ -c utilf.cpp
 hello:
 	echo "Held" 
- 
+  
+
+
+  qt  6 for python
+  ---------------------------------
+  
+  https://pypi.org/project/PyQt6/
+  from cmd run:
+      1.   pip install PyQt6
+	  2.   pip install PySide6
+		   pip show pyside6
+         

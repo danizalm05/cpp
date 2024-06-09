@@ -1,3 +1,13 @@
+1. Encapsulation: Not exposing all  the inner details of  class
+          using access  modiffer public or private  or
+		  getter and setter
+2. Inheritance
+3. Polymorphism
+ 
+static data part of the class not of the object.
+
+
+
 ----------------   namespace -----------------------
 namespace utils{
    void print_vector(std::vector<int> data) {

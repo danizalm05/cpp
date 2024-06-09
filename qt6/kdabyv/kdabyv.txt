@@ -1,0 +1,15 @@
+                         KDABtv
+Introduction to Qt Widgets (Part 01)  
+--------- 
+https://www.youtube.com/watch?v=g7yijWiZTmI&list=PL6CJYn40gN6hgf7zCKF2Rv9Y0WoN8RVGf 
+https://github.com/KDABLabs/kdabtv/blob/master/Programming-With-Qt-Widgets/fundamentals/ex-helloworld 
+
+ 
+cmake-project
+
+
+ 
+https://github.com/KDABLabs/KDToolBox/blob/master/qt/cmake-project/cmake-project 
+qmake to generate a project   .pro file by qmake run:
+ 
+ qmake-project

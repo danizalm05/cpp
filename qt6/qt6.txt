@@ -3,6 +3,15 @@
  of any anti-virus application that runs on your system.
 
 
+                           KDABtv
+Introduction to Qt Widgets (Part 01)  
+--------- 
+https://www.youtube.com/watch?v=g7yijWiZTmI&list=PL6CJYn40gN6hgf7zCKF2Rv9Y0WoN8RVGf 
+https://github.com/KDABLabs/kdabtv/blob/master/Programming-With-Qt-Widgets/fundamentals/ex-helloworld 
+
+https://doc.qt.io/
+
+
 C:\Qt\Tools
 C:\Qt\Tools\QtCreator\bin
 
@@ -16,11 +25,14 @@ C:\Qt\6.6.3\mingw_64\bin\windeploy.exe
 
 
 ----------------------  create standalone  --------------------
+Change Debug mode to realse mode
+Copy the exe relase version to an empty dir and run this command:
 
-Copy the exe relase version to an empty dir and run this command
-C:\Qt\6.6.3\mingw_64\bin\windeployqt   C:\Users.... [realse dir]
+C:\Qt\6.6.3\mingw_64\bin\windeployqt    C:\Users\gilfm...[realse dir]
 
-C:\Qt\6.6.3\mingw_64\bin\windeployqt    C:\Users\gilfm\Documents\d\cpp01\qt6\projects\BoxLayout\build-BoxLayou-Desktop_Qt_6_6_3_MinGW_64_bit-Release 
+Example
+C:\Qt\6.6.3\mingw_64\bin\windeployqt    
+              C:\Users\gilfm\Documents\d\cpp01\qt6\projects\BoxLayout\build-BoxLayou-Desktop_Qt_6_6_3_MinGW_64_bit-Release 
 
 
 
@@ -57,4 +69,15 @@ utilf.o: utilf.cpp
 	g++ -c utilf.cpp
 hello:
 	echo "Held" 
- 
+  
+
+
+  qt  6 for python
+  ---------------------------------
+  
+  https://pypi.org/project/PyQt6/
+  from cmd run:
+      1.   pip install PyQt6
+	  2.   pip install PySide6
+		   pip show pyside6
+         
