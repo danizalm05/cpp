@@ -1,10 +1,10 @@
   /* 
-  *https://www.youtube.com/watch?v=_rzEUwv2-eQ&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=101
-  Tutorial 96 - Class Across Files - Multifile Compilation
-      https://www.youtube.com/watch?v=nbd7o8iKh9Q&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=98
-     
+  * 
+  C++ Programming Tutorial 98 - Base Classes and Subclasses Inheritance
+  https://www.youtube.com/watch?v=_rzEUwv2-eQ&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=100
+      
       1.   save file
-      2.  g++   98main-teacher.cpp teacher.cpp -o tech  -std=c++11
+      2.  g++   98main-teacher.cpp user.cpp teacher.cpp -o tech  -std=c++11
       3.  ./tech
  ---------------------------
         debug
@@ -12,7 +12,7 @@
   shift + F5     exit debug
   F10            move to next line
  
- 5:00
+ 7:00
  
  
  
@@ -20,12 +20,19 @@
 
  #include <iostream>
  #include <string>
-
+ #include <iostream>
  #include "user.h" 
  #include "teacher.h"
 
  main()
  {
    User user;
-   std::cin >> user; 
+   //std::cin >> user; 
+
+   Teacher teacher;
+   teacher.first_name="hjhjhj";
+   teacher.output(); 
+
+
+
  }

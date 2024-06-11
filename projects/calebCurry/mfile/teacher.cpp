@@ -9,11 +9,13 @@
   shift + F5     exit debug
   F10            move to next line
  */ 
- //#include "user.h" 
- #include "teacher.h"/#include <iostream>
+ //
+ #include "user.h" 
+ #include "teacher.h" 
+
 
 void Teacher::output()
 {
-  std::cout << "output\n";
+  std::cout << "first_name = "<< first_name ;
 
 }

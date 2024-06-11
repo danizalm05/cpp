@@ -1,8 +1,13 @@
- 
+
+
 
 #ifndef  USER_H
     
 #define   USER_H  
+
+#include <iostream>
+#include <ostream> 
+
 class User 
   {
     //'private': is deafult in class  
