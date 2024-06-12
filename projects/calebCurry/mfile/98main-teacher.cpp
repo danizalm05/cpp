@@ -26,10 +26,10 @@
 
  main()
  {
-   User user;
+   User user;//User costructer is created 
    //std::cin >> user; 
 
-   Teacher teacher;
+   Teacher teacher;//User costructer is created and Teacher costructer is created
    teacher.first_name="hjhjhj";
    teacher.output(); 
 

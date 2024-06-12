@@ -33,7 +33,7 @@
     User::User()  
     {
       user_count++;
-      //std::cout << "Constructor 1\n ";
+      std::cout << "User created  \n ";
     }
      
    std::ostream& operator << (std::ostream &output, User user); 
