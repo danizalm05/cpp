@@ -1,8 +1,9 @@
 
 /*
- * Skills By Mbdia
- Login and Registration Form
-        26:40
+ *  Login and Registration Form in Qt Creator using C++
+Skills By Mbdia
+
+ https://www.youtube.com/watch?v=4qjpSH53Zrs
 */
 
 
