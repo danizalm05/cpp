@@ -19,6 +19,8 @@ class User
       std::string  last_name;
       void  set_status(std::string status);
       std::string get_status(); 
+     virtual void output();
+     //void output();
       User();  
       friend std::ostream& operator << (std::ostream &output, User user); 
  

@@ -16,6 +16,7 @@
 
 void Teacher::output()
 {
+  std::cout << "Teacher::output()" ; 
   std::cout << "first_name = "<< first_name ;
 
 }

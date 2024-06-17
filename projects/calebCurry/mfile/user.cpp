@@ -35,7 +35,11 @@
       user_count++;
       std::cout << "User created  \n ";
     }
-     
+
+   void User::output(){
+      std::cout << "void User::output() I am a user\n";
+   } 
+
    std::ostream& operator << (std::ostream &output, User user); 
    // defintion is outside of the class. 
    // This is not a member function
