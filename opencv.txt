@@ -1,0 +1,6 @@
+https://www.computervision.zone/lessons/video-tutorial/
+https://github.com/opencv/opencv/releases   under Assets download the windows.exe  version
+
+Add bin folder to the Environment Variables path
+ 
+https://www.youtube.com/watch?v=2FYm3GOonhk 
