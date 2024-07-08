@@ -8,7 +8,7 @@ static data part of the class not of the object.
 
 
 
-----------------   namespace -----------------------
+------------- ---   namespace    -----------------------
 namespace utils{
    void print_vector(std::vector<int> data) {
           for(int i =0; i< data.size();i++) {
