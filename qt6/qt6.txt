@@ -1,0 +1,83 @@
+ 
+ Add your Qt build directory to the list of excluded directories
+ of any anti-virus application that runs on your system.
+
+
+                           KDABtv
+Introduction to Qt Widgets (Part 01)  
+--------- 
+https://www.youtube.com/watch?v=g7yijWiZTmI&list=PL6CJYn40gN6hgf7zCKF2Rv9Y0WoN8RVGf 
+https://github.com/KDABLabs/kdabtv/blob/master/Programming-With-Qt-Widgets/fundamentals/ex-helloworld 
+
+https://doc.qt.io/
+
+
+C:\Qt\Tools
+C:\Qt\Tools\QtCreator\bin
+
+doc
+--------------------
+file:///C:/Qt/Tools/QtCreator/share/doc/qtcreator/qtcreator/index.html#
+
+C:/Qt/Tools/mingw1120_64/bin/
+
+C:\Qt\6.6.3\mingw_64\bin\windeploy.exe
+
+
+----------------------  create standalone  --------------------
+Change Debug mode to realse mode
+Copy the exe relase version to an empty dir and run this command:
+
+C:\Qt\6.6.3\mingw_64\bin\windeployqt    C:\Users\gilfm...[realse dir]
+
+Example
+C:\Qt\6.6.3\mingw_64\bin\windeployqt    
+              C:\Users\gilfm\Documents\d\cpp01\qt6\projects\BoxLayout\build-BoxLayou-Desktop_Qt_6_6_3_MinGW_64_bit-Release 
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=yk9Byd8UPi8
+
+https://www.youtube.com/results?search_query=Build+Standalone+Qt+Application+for+Windows
+https://www.youtube.com/watch?v=9G9_7czvGpY&list=PLQMs5svASiXNx0UX7tVTncos4j0j9rRa4
+ Qt6 C++ GUI Development Course ( Build GUI Apps in Qt & C++ )
+Parwiz   Forogh 
+ 
+ 
+ 
+ https://www.youtube.com/watch?v=Wi9nQTDFF4U&list=PL1FgJUcJJ03uTfN-0NVzfUSyoZtM3pUfr
+ 34:00
+ 
+ 
+ make file
+ ------------------------------------
+ https://medium.com/@samsorrahman/how-to-run-a-makefile-in-windows-b4d115d7c516
+ https://makefiletutorial.com/
+C:\Qt\Tools\mingw1120_64\bin\mingw32-make   -version  
+
+
+
+math: mainf.o utilf.o
+	g++ mainf.o utilf.o -o math
+mainf.o: mainf.cpp
+	g++ -c mainf.cpp
+utilf.o: utilf.cpp
+	g++ -c utilf.cpp
+hello:
+	echo "Held" 
+  
+
+
+  qt  6 for python
+  ---------------------------------
+  
+  https://pypi.org/project/PyQt6/
+  from cmd run:
+      1.   pip install PyQt6
+	  2.   pip install PySide6
+		   pip show pyside6
+         

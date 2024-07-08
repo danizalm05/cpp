@@ -1,0 +1,32 @@
+1. Encapsulation: Not exposing all  the inner details of  class
+          using access  modiffer public or private  or
+		  getter and setter
+2. Inheritance
+3. Polymorphism
+ 
+static data part of the class not of the object.
+
+
+
+----------------   namespace -----------------------
+namespace utils{
+   void print_vector(std::vector<int> data) {
+          for(int i =0; i< data.size();i++) {
+             cout <<" " <<data[i] << "\t";
+          }
+   }
+ }
+
+how to use:
+        utils::print_vector(data);
+--------------------------
+
+template <typename T>
+void swap(T &a, T &b){
+ int swap = a;
+ a=b;
+ b= swap;
+} 
+ 
+ how to use:
+     swap(a,b);// a and bcan be of any type

@@ -1,0 +1,51 @@
+
+                        compile cpp online 
+------------------------------------
+https://www.tutorialspoint.com/compile_cpp_online.php
+https://cpp.sh/
+https://www.codechef.com/learn/topic/cpp     za g 6Gpz+l*+++3+++
+
+
+                         Installing g++
+=================-------------------------==================
+
+C++ Programming Tutorial 2 - Installing g++ and Getting Started
+ Caleb Curry
+  
+https://www.youtube.com/watch?v=aVqZ3lZD8Qk&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=4 
+ 
+
+/*
+How to Download and Install C Cpp Toolset ( gcc g++ gdb )
+ in Windows 10 using mingw-w64 and msys2
+1.Install  C Cpp Toolset
+   https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
+
+2. Set up Visual Studio Code for C and C++ Programming
+    https://www.youtube.com/watch?v=77v-Poud_io
+
+
+1.File > Add folder to workspace... and create a new  folder
+2.File > Save work space as... and chose a name
+3. Add new file
+4. File > Preferences  > Settings > Extensions > Run Code Configurator
+    and serach and check 'run in  terminal' 	
+==================================================================	
+https://code.visualstudio.com/docs/cpp/config-mingw
+1. Terminal > Configure Default Build Task. 
+2. Choose g++.exe build active file    //Create a tasks.json file 
+3.Ctrl+Shift+B or from the Terminal main menu choose Run Build Task.
+4. Create a new terminal using the + button
+5. Run  the  program './program name"
+
+Debug
+ 1. Run > Add Configuration... and then choose C++ (GDB/LLDB).
+ 2. Choose g++.exe build and debug active file.
+
+ Start a debugging session#
+
+  1.Go back to helloworld.cpp so that it is the active file.
+  2 Run > Start Debugging.   F5
+  shift + F5 exit debug
+  F10 move to next line
+ 

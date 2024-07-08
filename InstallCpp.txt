@@ -1,0 +1,68 @@
+ 
+ 
+ 
+How to Download and Install C Cpp Toolset ( gcc g++ gdb )
+ in Windows 10 using mingw-w64 and msys2
+1.Install  C Cpp Toolset
+   https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
+
+2. Set up Visual Studio Code for C and C++ Programming
+    https://www.youtube.com/watch?v=77v-Poud_io
+ 
+ 
+ https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code
+ 1. Open/Create an empty folder in VSCode.
+ 2. Create a new.cpp file inside it.
+ 
+ 3. To configure debug configuration, 2 files are required:
+     'launch.json' 'tasks.json' inside '.vscode' folder.
+
+   
+     Debug -> Start Debugging and select C++ (GDB/LLDB) 
+     select g++.exe build and debug active file.
+   This should create 2 files launch.json and tasks.json in .vscode folder 
+ 4. Restart VSCode to take effects of newly added compiler paths.  
+
+--------------------------------------------------------------
+ 
+How to Download and Install C Cpp Toolset ( gcc g++ gdb )
+ in Windows 10 using mingw-w64 and msys2
+https://www.youtube.com/watch?v=0HD0pqVtsmw&t=0s
+ 
+ 1. download the 'msys2'  version:  https://www.msys2.org/
+ https://www.mingw-w64.org/
+ https://www.mingw-w64.org/downloads/
+ https://www.mingw-w64.org/downloads/#msys2
+ 
+ 2. From the   terminal( Msys MinGW )run:
+   2.1 pacman -Syu   # Update the package database and base packages using
+       close the terminal      
+   2.2 msys2 64 # open the command line
+       run : pacman -Su  # Update rest of the base packages 
+ 3.	   
+
+
+
+C++ Builder 11  
+--------------------------------
+https://learncplusplus.org/how-to-install-c-builder-ce-community-edition-for-your-first-project/
+
+ Download the free version of C++ Builder 11 CE Community Edition here: https://www.embarcadero.com/products/cbuilder/starter
+MECK-LVASH2-EVVTW8-DE8D 
+
+8729333
+
+ Getting Started with Embarcadero C++ Builder
+https://www.youtube.com/@hopewell480
+
+
+Build C++ GUI apps FAST! Your first C++ GUI app!   3:50
+https://www.youtube.com/watch?v=FxQTXyR4mjs&list=PL43pGnjiVwgQakzRxpt2amqN9f7-tRtc_
+
+
+
+Qt 6 With C++
+https://www.youtube.com/watch?v=smQms-2yJYc&list=PLUbFnGajtZlXbrbdlraCe3LMC_YH5abao&index=5
+
+
+https://www.qt.io/academy?tags=Install%2CGetting+started

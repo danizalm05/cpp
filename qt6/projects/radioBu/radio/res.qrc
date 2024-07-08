@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>boomerang.png</file>
+        <file>color_spaces.png</file>
+        <file>shoe.PNG</file>
+    </qresource>
+</RCC>

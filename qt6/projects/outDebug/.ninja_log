@@ -1,0 +1,12 @@
+# ninja log v5
+3	2143	7356676763910530	listwidgt_autogen/timestamp	3dd23762f8bd9b4a
+3	2143	7356676763910530	listwidgt_autogen/mocs_compilation.cpp	3dd23762f8bd9b4a
+3	2143	7356676763910530	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/listwidgt_autogen/timestamp	3dd23762f8bd9b4a
+3	2143	7356676763910530	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/listwidgt_autogen/mocs_compilation.cpp	3dd23762f8bd9b4a
+2145	8104	7356676826519483	CMakeFiles/listwidgt.dir/listwidgt_autogen/mocs_compilation.cpp.obj	422e9c033f86a6c0
+2175	8147	7356676826944676	CMakeFiles/listwidgt.dir/main.cpp.obj	8c7b6769ea0fdbae
+20	500	7356677146725612	listwidgt_autogen/timestamp	3dd23762f8bd9b4a
+20	500	7356677146725612	listwidgt_autogen/mocs_compilation.cpp	3dd23762f8bd9b4a
+20	500	7356677146725612	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/listwidgt_autogen/timestamp	3dd23762f8bd9b4a
+20	500	7356677146725612	C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/listwidgt_autogen/mocs_compilation.cpp	3dd23762f8bd9b4a
+536	6760	7356677209340733	CMakeFiles/listwidgt.dir/widget.cpp.obj	6cd278ccac0c4fb2

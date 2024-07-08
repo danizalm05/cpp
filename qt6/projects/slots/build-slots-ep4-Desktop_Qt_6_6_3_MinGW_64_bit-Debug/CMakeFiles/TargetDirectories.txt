@@ -1,0 +1,9 @@
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/slots-ep4.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/slots-ep4_autogen_timestamp_deps.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/slots/build-slots-ep4-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/slots-ep4_autogen.dir

@@ -1,0 +1,9 @@
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/listwidgt.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/edit_cache.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/rebuild_cache.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/list_install_components.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/install.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/install/local.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/install/strip.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/listwidgt_autogen_timestamp_deps.dir
+C:/Users/gilfm/Documents/d/cpp01/qt6/projects/outDebug/CMakeFiles/listwidgt_autogen.dir

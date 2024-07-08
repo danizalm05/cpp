@@ -1,0 +1,1 @@
+g++  60Filesofstream.cpp -o    fstre.exe  -std=c++11

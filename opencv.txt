@@ -1,0 +1,32 @@
+https://www.computervision.zone/lessons/video-tutorial/
+
+https://github.com/opencv/opencv/releases   under Assets download the windows.exe  version
+
+Add bin folder to the Environment Variables path
+      D:\opencv\opencv-c++\opencv\build\x64\vc16
+https://www.youtube.com/watch?v=2FYm3GOonhk 
+
+in vc
+
+new project:File > New > Project   Ctrl+Shift+N.
+
+Add Directories by going to Project-Properties-Configuration Properties-
+
+VC++ Directories
+in project properties change 
+
+1. D:\opencv\opencv-c++\opencv\build\include
+ . D:\opencv\opencv-c++\opencv\build\x64\vc16\lib
+
+or 
+2. C:\Users\gilfm\Documents\d\opencv\build\include
+ . C:\Users\gilfm\Documents\d\opencv\build\x64\vc16\lib
+
+3. Add Linker input: opencv_world450d.lib  or opencv_world4100.lib
+
+       d for debug without d for release 
+       the file is ocated in D:\opencv\opencv-c++\opencv\build\x64\vc16\lib
+add  to env variables	   
+.........\build\x64\vc16\bin	   
+https://www.computervision.zone/topic/windows/
+https://christianjmills.com/posts/opencv-visual-studio-getting-started-tutorial/windows/
