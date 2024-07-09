@@ -20,43 +20,43 @@ using namespace std;
 
 void main() {
 
-    
-    
+
+
     //C:\Users\rockman\source\repos
-    
+
     // string user_name = "";
-    string user_name = "rockman";
+    string user_name = "gilfm";
     string image_name = "2.jpg";
     string video_name = "1.mp4";
 
-    string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/"  + image_name;
-    string video_path = "C:/Users/" + user_name + "/Videos/Captures/"+ video_name;
- 
+    string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/" + image_name;
+    string video_path = "C:/Users/" + user_name + "/Videos/Captures/" + video_name;
+
     Mat img;
     cout << video_path;
-    /*
+    
 
      img = imread(path);
      imshow("Image", img);
      waitKey(0);
-    */
+     
 
     ///////////////  Video or Webcam //////////////////////
-      
-     //VideoCapture cap(video_path); //use vidoe file
-    int Webcam_ID = 0;
-    VideoCapture cap(Webcam_ID);// use the Webcam
-       while (true) {
-           cap.read(img);
-     		imshow("Image", img);
-     		waitKey(2);
-    	}
-  
+
+    VideoCapture cap(video_path); //use vidoe file
+    //int Webcam_ID = 0;
+    //VideoCapture cap(Webcam_ID);// use the Webcam
+    while (true) {
+        cap.read(img);
+        imshow("Image", img);
+        waitKey(2);
+    }
 
 
-    
 
-     
+
+
+
 
 
 
