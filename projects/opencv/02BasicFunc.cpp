@@ -1,7 +1,7 @@
 //02BasicFunc.cpp
 ///////////////  Basic Functions  //////////////////////
 
-//https://www.youtube.com/watch?v=2FYm3GOonhk  35:36
+//https://www.youtube.com/watch?v=2FYm3GOonhk  35:36 50:06
 //https://www.computervision.zone/courses/opencv-cv/
 //https://www.computervision.zone/topic/chapter-2-basic-functions-2/
 //C:/Users/gilfm/source/repos
@@ -14,8 +14,8 @@
 using namespace cv;
 using namespace std;
 
-// string user_name = "rockman";
-string user_name = "gilfm";
+// string user_name = "rockman"; "gilfm";
+string user_name = "rockman";
 string image_name = "1.jpg";
  
 
@@ -31,12 +31,11 @@ void main() {
 
 	cvtColor(img, imgGray, COLOR_BGR2GRAY);
 	GaussianBlur(imgGray, imgBlur, Size(7, 7), 5, 0);
-	Canny(imgBlur, imgCanny, 25, 75);
+	Canny(imgBlur, imgCanny, 25, 75);// edge detection algorithm
 
 	Mat kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
-	dilate(imgCanny, imgDil, kernel);
-	erode(imgDil, imgErode, kernel);
-
+	dilate(imgCanny, imgDil, kernel); //Expanding 
+	erode(imgDil, imgErode, kernel); // computes a local minimum
 	imshow("Image", img);
 	imshow("Image Gray", imgGray);
 	imshow("Image Blur", imgBlur);
