@@ -96,7 +96,7 @@ font-size:20px;
      </font>
     </property>
     <property name="text">
-     <string>fsdf</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="BookNameLineEdit">
@@ -116,7 +116,7 @@ font-size:20px;
      </font>
     </property>
     <property name="text">
-     <string>fsdf</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="OKpushButton">
@@ -152,7 +152,7 @@ font-size:20px;
      <x>0</x>
      <y>0</y>
      <width>405</width>
-     <height>23</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
