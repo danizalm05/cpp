@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=FbyB4rkzE10&list=PL8MpAn684UHKt_umMjmD0EhbV5IZ-5
 */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessagBox>
 #include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -39,7 +40,17 @@ void MainWindow::on_OKpushButton_clicked()
     std::cout << "urollNo_int " << urollNo_int << std::endl;
 
     for (int i=0; i< num_of_users ; i++){
-        std::cout << "urollNo[ "<< i <<" ]: = " <<rollNo[i] << std::endl;
+       std::cout << "urollNo["<< i <<"]:=" <<rollNo[i] ;
+
+        int b0 = (  rollNo[i]==  urollNo_int);
+        int b1 = (  book[i]  ==  ubook);
+        int b=b0 && b1; // bis true only if
+        std::cout << "rollNo[i]== urollNo_int  "<< b << std::endl;
+        if(b){//the data is correct
+            std::cout << "OK  "<<  urollNo_int << std::endl;
+            QMessageBox::information(this,);
+
+        }
     }
 }
 
