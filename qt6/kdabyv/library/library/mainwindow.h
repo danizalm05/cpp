@@ -17,7 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+ private slots:
     void on_OKpushButton_clicked();
 
 private:
