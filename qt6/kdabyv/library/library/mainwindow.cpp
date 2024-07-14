@@ -2,11 +2,12 @@
  *Library Management System in Qt  C++
 
 https://www.youtube.com/watch?v=FbyB4rkzE10&list=PL8MpAn684UHKt_umMjmD0EhbV5IZ-5uLd&index=5
-     23:05
+     34:05
 */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QMessagBox>
+
+#include <QMessageBox>
 #include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -39,18 +40,30 @@ void MainWindow::on_OKpushButton_clicked()
     std::cout << "sizeof(rollNo) " << num_of_users << std::endl;
     std::cout << "urollNo_int " << urollNo_int << std::endl;
 
+    bool found = false;
     for (int i=0; i< num_of_users ; i++){
-       std::cout << "urollNo["<< i <<"]:=" <<rollNo[i] ;
+      std::cout << "urollNo["<< i <<"]:=" <<rollNo[i] ;
 
-        int b0 = (  rollNo[i]==  urollNo_int);
-        int b1 = (  book[i]  ==  ubook);
-        int b=b0 && b1; // bis true only if
-        std::cout << "rollNo[i]== urollNo_int  "<< b << std::endl;
-        if(b){//the data is correct
-            std::cout << "OK  "<<  urollNo_int << std::endl;
-            QMessageBox::information(this,);
+      bool b0 = (  rollNo[i]==  urollNo_int);
+      bool b1 = (  book[i]  ==  ubook);
+      found = b0 && b1; // b is true only if
 
+      if(found){//the data is correct
+              QString msg = "Book: " + book[i] + "\n"+
+                      "rollNo: "+urollNo[i];
+              QMessageBox::information(this,"Message",msg,
+                                     QMessageBox::Ok);
+              break;
         }
     }
-}
+
+     if(!found){
+            QString errmsg = "Error in input \n Book: " +
+                          ubook + "\n"+
+                          "rollNo: "+urollNo;
+             QMessageBox::information(this,"Error",errmsg,
+                               QMessageBox::Ok);
+      }
+
+     }
 
