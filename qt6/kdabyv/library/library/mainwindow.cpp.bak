@@ -46,7 +46,7 @@ void MainWindow::on_OKpushButton_clicked()
 
       bool b0 = (  rollNo[i]==  urollNo_int);
       bool b1 = (  book[i]  ==  ubook);
-      found = b0 &&   b1; // b is true only if
+      found = b0 && b1; // b is true only if
 
       if(found){//the data is correct
               QString msg = "Book: " + book[i] + "\n"+
