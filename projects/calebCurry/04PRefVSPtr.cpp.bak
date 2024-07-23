@@ -4,7 +4,7 @@
   4:00
         compile: 
             g++  04PRefVSPtr.cpp  -o  poit  -std=c++11
-           run:  
+        run:  
             ./poit
  ---------------------------
         debug
