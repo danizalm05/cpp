@@ -34,6 +34,18 @@ void workByPtr(int *x){
     std::cout << "(workByPtr)  *x = " << *x <<std::endl;
     std::cout << "(workByPtr) &x = " << &x <<std::endl;
 } 
+
+    
+std::vector<int>  workVectByRef(std::vector<int> &data){
+    std::cout <<"\n(workVectByRef) &data   "<< &data  << std::endl;
+    for(int i =0; i < data.size();i++){  
+          data[i]++;
+           
+            //std::cout << "(workByPtr) &x = " << &x <<std::endl;
+    }  
+
+ return data;
+} 
 int main(){
 
  int a = 10;
@@ -55,10 +67,22 @@ int main(){
  workByPtr(b);
 
   std::cout <<"(main) c = "<< c << std::endl;
- //std::cout <<"(main) &b = "<< &b  << std::endl;
+ 
  
  std::vector<int> data {1, 2, 3, 4, 5};
- // workByRef(int &x)
- workByRef(data)
+   
+  ;
+ std::vector<int> data2 = workVectByRef(data);
+ std::cout <<"\n(main) &data   "<< &data  << std::endl;
+ for (int x : data){
+    std::cout << x <<" ";
+  }
+
+ std::cout <<"\n(main) &data2   "<< &data2  << std::endl;
+ for (int x : data2){
+    std::cout << x <<" ";
+  }
+ 
+  
  return 0;
 }
