@@ -3,8 +3,17 @@
  of any anti-virus application that runs on your system.
 
 
-                           KDABtv
-Introduction to Qt Widgets (Part 01)  
+
+
+Scythe Studio Qt QML Tutorial
+----------------------
+https://www.youtube.com/watch?v=RWd-zjclFB0&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI
+
+ 
+
+
+ 
+KDABtv   Introduction to Qt Widgets (Part 01)  
 --------- 
 https://www.youtube.com/watch?v=g7yijWiZTmI&list=PL6CJYn40gN6hgf7zCKF2Rv9Y0WoN8RVGf 
 https://github.com/KDABLabs/kdabtv/blob/master/Programming-With-Qt-Widgets/fundamentals/ex-helloworld 
