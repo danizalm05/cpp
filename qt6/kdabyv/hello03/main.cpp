@@ -32,12 +32,24 @@ void do_qt()
     qout.flush();
 
 }//do_qt
+
+void do_mix()
+{
+    QTextStream qin(stdin);
+    qInfo() << "Input Your Name!";
+    QString name = qin.readLine();
+    qInfo() << "Hello " << name;
+
+}//do_mix()
+
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    //qInfo() << "Hello World";
+
     //do_cpp();
-    do_qt();
+    //do_qt();
+    do_mix();
     return a.exec();
 }

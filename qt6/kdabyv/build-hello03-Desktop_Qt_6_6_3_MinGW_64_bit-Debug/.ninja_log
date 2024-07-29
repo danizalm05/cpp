@@ -1,0 +1,14 @@
+# ninja log v5
+15	833	7439467286165192	hello03_autogen/timestamp	314e27ff7a88d7be
+15	833	7439467286165192	hello03_autogen/mocs_compilation.cpp	314e27ff7a88d7be
+15	833	7439467286165192	C:/Users/gilfm/Documents/d/cpp02/qt6/kdabyv/build-hello03-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/hello03_autogen/timestamp	314e27ff7a88d7be
+15	833	7439467286165192	C:/Users/gilfm/Documents/d/cpp02/qt6/kdabyv/build-hello03-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/hello03_autogen/mocs_compilation.cpp	314e27ff7a88d7be
+835	1227	7439467291759593	CMakeFiles/hello03.dir/hello03_autogen/mocs_compilation.cpp.obj	252a282910e148b5
+860	4826	7439467327769750	CMakeFiles/hello03.dir/main.cpp.obj	6c2667ca6e0c350a
+4834	5175	7439467331098067	hello03.exe	16769daf41090ad0
+21	243	7439481727895036	hello03_autogen/timestamp	314e27ff7a88d7be
+21	243	7439481727895036	hello03_autogen/mocs_compilation.cpp	314e27ff7a88d7be
+21	243	7439481727895036	C:/Users/gilfm/Documents/d/cpp02/qt6/kdabyv/build-hello03-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/hello03_autogen/timestamp	314e27ff7a88d7be
+21	243	7439481727895036	C:/Users/gilfm/Documents/d/cpp02/qt6/kdabyv/build-hello03-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/hello03_autogen/mocs_compilation.cpp	314e27ff7a88d7be
+254	3955	7439481765030522	CMakeFiles/hello03.dir/main.cpp.obj	6c2667ca6e0c350a
+3956	4252	7439481767890504	hello03.exe	16769daf41090ad0
