@@ -1,7 +1,7 @@
 /* Chapter 7: Shapes Contor Detection
 https://www.youtube.com/watch?v=2FYm3GOonhk   01:37:00   01:55:00
 https://www.computervision.zone/courses/opencv-cv/
-https://www.computervision.zone/topic/chapter-5-warp-images/
+
  https://github.com/murtazahassan/Learn-OpenCV-cpp-in-4-Hours
  */
 
@@ -34,17 +34,19 @@ void getContours(Mat imgDil, Mat img) {
 		cout << area << endl;
 		string objectType;
 
-		if (area > 1000)// if area is smaller then this is noise, so ignore it
+		if (area > 1000)// if area is smaller then this is noise
+			            //,so ignore it
 		{
-			float peri = arcLength(contours[i], true);
-			approxPolyDP(contours[i], conPoly[i], 0.02 * peri, true);
+			bool close_shape = true;
+			float peri = arcLength(contours[i], close_shape);
+			approxPolyDP(contours[i], conPoly[i], 0.02 * peri, close_shape);
 			cout << conPoly[i].size() << endl;
 			boundRect[i] = boundingRect(conPoly[i]);
 
-			int objCor = (int)conPoly[i].size();
+			int objCor = (int)conPoly[i].size();//number of corners
 
-			if (objCor == 3) { objectType = "Tri"; }
-			else if (objCor == 4)
+			if (objCor == 3) { objectType = "Tri"; }//triangle
+			else if (objCor == 4)////ractangle or a squre
 			{
 				float aspRatio = (float)boundRect[i].width / (float)boundRect[i].height;
 				cout << aspRatio << endl;
@@ -54,8 +56,10 @@ void getContours(Mat imgDil, Mat img) {
 			else if (objCor > 4) { objectType = "Circle"; }
 
 			drawContours(img, conPoly, i, Scalar(255, 0, 255), 2);
-
-			rectangle(img, boundRect[i].tl(), boundRect[i].br(), Scalar(0, 255, 0), 5);
+			
+			//   find the binding box  tl=TopLeft  br=BottomRight
+			rectangle(img, boundRect[i].tl(), boundRect[i].br(), 
+				               Scalar(0, 255, 0), 2);
 			putText(img, objectType, { boundRect[i].x,boundRect[i].y - 5 }, FONT_HERSHEY_PLAIN, 1, Scalar(0, 69, 255), 2);
 		}
 	}
@@ -65,8 +69,8 @@ void getContours(Mat imgDil, Mat img) {
 void main() {
  
 	// string user_name = "gilfm"; "rockman";
-	string user_name = "rockman";//"gilfm";
-	string image_name = "shapes.png";//lambo.png";2.jpg";"cards.jpg"
+	string user_name = "gilfm";//"gilfm";
+	string image_name = "shapes01.png"; //"shapes.png lambo.png ;2.jpg";"cards.jpg"
 
 
 	string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/" + image_name;
