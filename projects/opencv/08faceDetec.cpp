@@ -16,9 +16,9 @@ https://www.computervision.zone/courses/opencv-cv/
 
 void main() {
  
-	// string user_name = "gilfm"; "rockman";
-	std::string user_name = "rockman";//"gilfm";
-	std::string image_name = "14.jpg"; //"shapes.png lambo.png ;2.jpg";"cards.jpg"
+	 
+	std::string user_name = "gilfm";//  "gilfm"; "rockman";
+	std::string image_name = "1.jpg"; //"shapes.png lambo.png ;2.jpg";"cards.jpg"
 
 
 	std::string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/" + image_name;
@@ -27,9 +27,10 @@ void main() {
 	cv::imshow("Image", img);
 	//                            haarcascade_frontalface_default.xml
 	std::string cade_file_name = "haarcascade_frontalface_default.xml";
-	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
- 
+	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
 
+	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/faces/haarcascade_frontalface_default.xml";
 
 	cv::CascadeClassifier faceCascade;
 	
