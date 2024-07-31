@@ -1,4 +1,4 @@
-/* Chapter 7: Shapes Contor Detection
+/* Chapter 8: FaceDetection
 https://www.youtube.com/watch?v=2FYm3GOonhk  02:16:00
 https://www.computervision.zone/courses/opencv-cv/
 
@@ -27,15 +27,17 @@ void main() {
 	cv::imshow("Image", img);
 	//                            haarcascade_frontalface_default.xml
 	std::string cade_file_name = "haarcascade_frontalface_default.xml";
+<<<<<<< HEAD
 	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
 	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+=======
+	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+	std::cout << xmlpath << std::endl;
+>>>>>>> a96608035a66886d3bcc525c035921d71a45b7fa
 
 	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/faces/haarcascade_frontalface_default.xml";
 
 	cv::CascadeClassifier faceCascade;
-	
-	
-	std::cout << xmlpath << std::endl;
 	faceCascade.load(xmlpath);
 	
 	if (faceCascade.empty()) { 
