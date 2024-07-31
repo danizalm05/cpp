@@ -25,13 +25,18 @@ void main() {
 	cv::Mat img = cv::imread(path);
 	std::cout << path << std::endl;
 	cv::imshow("Image", img);
-	 
+	//                            haarcascade_frontalface_default.xml
 	std::string cade_file_name = "haarcascade_frontalface_default.xml";
-	std::string xmlpath = "C:/Users/" + user_name +
-  	                "/Pictures/faces/haarcascade_frontalface_default.xml";
-    std::cout << xmlpath << std::endl; 
-	
-	
+<<<<<<< HEAD
+	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+	//std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+=======
+	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/Resources/" + cade_file_name;
+	std::cout << xmlpath << std::endl;
+>>>>>>> a96608035a66886d3bcc525c035921d71a45b7fa
+
+	std::string xmlpath = "C:/Users/" + user_name + "/Pictures/faces/haarcascade_frontalface_default.xml";
+
 	cv::CascadeClassifier faceCascade;
 	faceCascade.load(xmlpath);
 	
