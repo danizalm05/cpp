@@ -1,5 +1,5 @@
 /* project –  Doc scan
-https://www.youtube.com/watch?v=2FYm3GOonhk     01:37:00
+https://www.youtube.com/watch?v=2FYm3GOonhk   03:03:00  03:10:00
 https://www.computervision.zone/courses/opencv-cv/
  
  https://github.com/murtazahassan/Learn-OpenCV-cpp-in-4-Hours
@@ -11,37 +11,37 @@ https://www.computervision.zone/courses/opencv-cv/
 #include <opencv2/imgproc.hpp>
 #include <iostream>
 
-using namespace cv;
+//using namespace cv;
 using namespace std;
 
 ///////////////  Project 2 - Document Scanner  ////////////////
 
-Mat imgOriginal, imgGray, imgBlur, imgCanny, imgThre, imgDil, imgErode, imgWarp, imgCrop;
-vector<Point> initialPoints, docPoints;
+cv::Mat imgOriginal, imgGray, imgBlur, imgCanny, imgThre, imgDil, imgErode, imgWarp, imgCrop;
+vector<cv::Point> initialPoints, docPoints;
 float w = 420, h = 596;
 
-Mat preProcessing(Mat img)
+cv::Mat preProcessing(cv::Mat img)
 {
-	cvtColor(img, imgGray, COLOR_BGR2GRAY);
-	GaussianBlur(imgGray, imgBlur, Size(3, 3), 3, 0);
-	Canny(imgBlur, imgCanny, 25, 75);
-	Mat kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
-	dilate(imgCanny, imgDil, kernel);
-	//erode(imgDil, imgErode, kernel);
+	cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
+    cv::GaussianBlur(imgGray, imgBlur, cv::Size(3, 3), 3, 0);
+    cv::Canny(imgBlur, imgCanny, 25, 75);
+	cv::Mat kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));
+    cv::dilate(imgCanny, imgDil, kernel);
+	//cv::erode(imgDil, imgErode, kernel);
 	return imgDil;
 }
 
-vector<Point> getContours(Mat image) {
+vector<cv::Point> getContours(cv::Mat image) {
 
-	vector<vector<Point>> contours;
-	vector<Vec4i> hierarchy;
+	vector<vector<cv::Point>> contours;
+	vector<cv::Vec4i> hierarchy;
 
-	findContours(image, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+	findContours(image, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 	//drawContours(img, contours, -1, Scalar(255, 0, 255), 2);
-	vector<vector<Point>> conPoly(contours.size());
-	vector<Rect> boundRect(contours.size());
+	vector<vector<cv::Point>> conPoly(contours.size());
+	vector<cv::Rect> boundRect(contours.size());
 
-	vector<Point> biggest;
+	vector<cv::Point> biggest;
 	int maxArea = 0;
 
 	for (int i = 0; i < contours.size(); i++)
@@ -69,18 +69,18 @@ vector<Point> getContours(Mat image) {
 	return biggest;
 }
 
-void drawPoints(vector<Point> points, Scalar color)
+void drawPoints(vector<cv::Point> points, cv::Scalar color)
 {
 	for (int i = 0; i < points.size(); i++)
 	{
-		circle(imgOriginal, points[i], 10, color, FILLED);
-		putText(imgOriginal, to_string(i), points[i], FONT_HERSHEY_PLAIN, 4, color, 4);
+		circle(imgOriginal, points[i], 10, color, cv::FILLED);
+		putText(imgOriginal, to_string(i), points[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
 	}
 }
 
-vector<Point> reorder(vector<Point> points)
+vector<cv::Point> reorder(vector<cv::Point> points)
 {
-	vector<Point> newPoints;
+	vector<cv::Point> newPoints;
 	vector<int>  sumPoints, subPoints;
 
 	for (int i = 0; i < 4; i++)
@@ -97,13 +97,13 @@ vector<Point> reorder(vector<Point> points)
 	return newPoints;
 }
 
-Mat getWarp(Mat img, vector<Point> points, float w, float h)
+cv::Mat getWarp(cv::Mat img, vector<cv::Point> points, float w, float h)
 {
-	Point2f src[4] = { points[0],points[1],points[2],points[3] };
-	Point2f dst[4] = { {0.0f,0.0f},{w,0.0f},{0.0f,h},{w,h} };
+	cv::Point2f src[4] = { points[0],points[1],points[2],points[3] };
+	cv::Point2f dst[4] = { {0.0f,0.0f},{w,0.0f},{0.0f,h},{w,h} };
 
-	Mat matrix = getPerspectiveTransform(src, dst);
-	warpPerspective(img, imgWarp, matrix, Point(w, h));
+	cv::Mat matrix = getPerspectiveTransform(src, dst);
+	warpPerspective(img, imgWarp, matrix, cv::Point(w, h));
 
 	return imgWarp;
 }
@@ -119,20 +119,15 @@ void main() {
 	cv::Mat imgOriginal = cv::imread(path);
 	
 	 
-    cv::resize(imgOriginal, imgOriginal, Size(), 0.5, 0.5);
- 
-	cv::imshow("Image original", imgOriginal);
+    cv::resize(imgOriginal, imgOriginal, cv::Size(), 0.5, 0.5);
+    cv::imshow("Image original", imgOriginal);
 	 
-	 
-
-	/*
-	//resize(imgOriginal, imgOriginal, Size(), 0.5, 0.5);
-
 	// Preprpcessing - Step 1 
 	imgThre = preProcessing(imgOriginal);
-
-	// Get Contours - Biggest  - Step 2
-	initialPoints = getContours(imgThre);
+	cv::imshow("Image Step 1 ", imgThre);
+	/*
+	 // Get Contours - Biggest  - Step 2
+	initialPoints = cv::getContours(imgThre);
 	//drawPoints(initialPoints, Scalar(0, 0, 255));
 	docPoints = reorder(initialPoints);
 	//drawPoints(docPoints, Scalar(0, 255, 0));
@@ -151,6 +146,6 @@ void main() {
 	imshow("Image Crop", imgCrop);
 	*/
 
-	waitKey(0);
+	cv::waitKey(0);
 
 }
