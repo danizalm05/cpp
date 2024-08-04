@@ -1,5 +1,5 @@
 /*  Project 1 - Virtual Painter  */
-//https://www.youtube.com/watch?v=2FYm3GOonhk   02:24:00 -
+//https://www.youtube.com/watch?v=2FYm3GOonhk   02:24:00 - 02:38:00
 // https://github.com/murtazahassan/Learn-OpenCV-cpp-in-4-Hours
 //https://www.computervision.zone/topic/chapter-1-read-images-videos-and-webcams/
 
@@ -20,11 +20,13 @@ vector<vector<int>> newPoints;  // to store all points
 
 /////////////////////  COLOR VALUES ////////////////////////////////
 						    // hmin, smin, vmin hmax, smax, vmax
-vector<vector<int>> myColors{ {124,  48,   117, 143,  170,  255}, // Purple
-					        {  68,   72,   156, 102,  126,  255} };// Green
+vector<vector<int>> myColors{ {62, 152, 47, 145, 252, 255}, // blue
+					          {22, 62, 79, 81,  223, 255} // yellow
+                            };
 vector<Scalar> myColorValues{ 
-	                          {255 ,0   ,255}, // Purple
-						      {0   ,255 ,0} }; // Green 	
+	                          {220,  50   ,0}, // blue
+			    		      {0,255 ,255}  // yellow 
+                            }; 	
 ////////////////////////////////////////////////////////////////////
 
 Point getContours(Mat image) {
