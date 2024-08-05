@@ -1,5 +1,5 @@
 /* Project 2 - Document Scanner
-https://www.youtube.com/watch?v=2FYm3GOonhk   03:03:00  03:20:00
+https://www.youtube.com/watch?v=2FYm3GOonhk   03:03:00  03:36:00
 https://www.computervision.zone/courses/opencv-cv/
  
  https://github.com/murtazahassan/Learn-OpenCV-cpp-in-4-Hours
@@ -55,14 +55,14 @@ std::vector<cv::Point> getContours(cv::Mat image) {
 			
 			if (area > maxArea && conPoly[i].size() == 4) {
 				
-				drawContours(imgOriginal, conPoly, i, cv::Scalar(255, 0, 255), 5);
+				//drawContours(imgOriginal, conPoly, i, cv::Scalar(255, 0, 255), 5);
 				biggest = { conPoly[i][0],conPoly[i][1] ,conPoly[i][2] ,conPoly[i][3] };
 				maxArea = area;
 				
 				
 			}
-			drawContours(imgOriginal, conPoly, i, cv::Scalar(255, 0, 255), 2);
-			rectangle(imgOriginal, boundRect[i].tl(), boundRect[i].br(), cv::Scalar(0, 255, 0), 5);
+			//drawContours(imgOriginal, conPoly, i, cv::Scalar(255, 0, 255), 2);
+			//rectangle(imgOriginal, boundRect[i].tl(), boundRect[i].br(), cv::Scalar(0, 255, 0), 5);
 		}
 	}
 
@@ -71,15 +71,13 @@ std::vector<cv::Point> getContours(cv::Mat image) {
 
 void drawPoints(std::vector<cv::Point> points, cv::Scalar color)
 { 
-	
-	
 	for (int i = 0; i < points.size(); i++)
 	{  
-		std::cout << points[i] << " : " << points.size() << std::endl;
+		//std::cout << points[i] << " : " << points.size() << std::endl;
 		circle(imgOriginal, points[i], 10, color, cv::FILLED);
 		putText(imgOriginal, std::to_string(i), points[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
-		
-	}
+			}
+	 
 }
 
 std::vector<cv::Point> reorder(std::vector<cv::Point> points)
@@ -114,7 +112,7 @@ cv::Mat getWarp(cv::Mat img, std::vector<cv::Point> points, float w, float h)
 
 void main() {
 	// string user_name = "gilfm"; "rockman";
-	std::string user_name = "gilfm";//"gilfm";
+	std::string user_name = "rockman"; 
 	std::string image_name = "doc2.jpg"; //"shapes.png lambo.png ;2.jpg";"cards.jpg"
 
 
@@ -123,7 +121,7 @@ void main() {
 	cv::Mat imgOriginal = cv::imread(path);
 	
 	 
-    cv::resize(imgOriginal, imgOriginal, cv::Size(), 0.5, 0.5);
+    cv::resize(imgOriginal, imgOriginal, cv::Size(), 0.3, 0.3);
 	
 	 
 	// Preprpcessing - Step 1 
@@ -132,38 +130,32 @@ void main() {
 	
 	 // Get Contours - Biggest  - Step 2
 	initialPoints = getContours(imgThre);
+    docPoints = reorder(initialPoints);
+
+	cv::Scalar color = cv::Scalar(230, 0, 255);
+	for (int i = 0; i < docPoints.size(); i++) {
+	   circle(imgOriginal, docPoints[i], 10, color, cv::FILLED);
+	   putText(imgOriginal, std::to_string(i), docPoints[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
+	}
+
 	
-	cv::putText(imgOriginal,
-		"Text to add",
-		cv::Point(35, 35), // Coordinates (Bottom-left corner of the text string in the image)
-		cv::FONT_HERSHEY_COMPLEX_SMALL, // Font
-		1.0, // Scale. 2.0 = 2x bigger
-		cv::Scalar(255, 0, 255), // BGR Color
-		2, // Line Thickness (Optional)
-		cv::LINE_AA);
+	// Warp - Step 3 03:36:00
 
-	drawPoints(initialPoints, cv::Scalar(230, 0, 255));
-	/*
-	docPoints = reorder(initialPoints);
-	//drawPoints(docPoints, Scalar(0, 255, 0));
-
-	// Warp - Step 3 
-	imgWarp = getWarp(imgOriginal, docPoints, w, h);
+	/*imgWarp = getWarp(imgOriginal, docPoints, w, h);
 
 	//Crop - Step 4
 	int cropVal = 5;
 	Rect roi(cropVal, cropVal, w - (2 * cropVal), h - (2 * cropVal));
 	imgCrop = imgWarp(roi);
 
-	imshow("Image", imgOriginal);
-	//imshow("Image Dilation", imgThre);
+	 
 	//imshow("Image Warp", imgWarp);
 	imshow("Image Crop", imgCrop);
 	*/
 
 	
 	cv::imshow("Image original", imgOriginal);
-	cv::imshow("Image Step 1 ", imgThre);
+	cv::imshow("Image Dilation Step 1 ", imgThre);
 	cv::waitKey(0);
 
 }
