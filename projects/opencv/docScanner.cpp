@@ -70,13 +70,15 @@ std::vector<cv::Point> getContours(cv::Mat image) {
 }
 
 void drawPoints(std::vector<cv::Point> points, cv::Scalar color)
-{
+{ 
+	
 	
 	for (int i = 0; i < points.size(); i++)
 	{  
 		std::cout << points[i] << " : " << points.size() << std::endl;
 		circle(imgOriginal, points[i], 10, color, cv::FILLED);
 		putText(imgOriginal, std::to_string(i), points[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
+		
 	}
 }
 
@@ -112,7 +114,7 @@ cv::Mat getWarp(cv::Mat img, std::vector<cv::Point> points, float w, float h)
 
 void main() {
 	// string user_name = "gilfm"; "rockman";
-	std::string user_name = "rockman";//"gilfm";
+	std::string user_name = "gilfm";//"gilfm";
 	std::string image_name = "doc2.jpg"; //"shapes.png lambo.png ;2.jpg";"cards.jpg"
 
 
@@ -122,14 +124,24 @@ void main() {
 	
 	 
     cv::resize(imgOriginal, imgOriginal, cv::Size(), 0.5, 0.5);
-    cv::imshow("Image original", imgOriginal);
+	
 	 
 	// Preprpcessing - Step 1 
 	imgThre = preProcessing(imgOriginal);
-	cv::imshow("Image Step 1 ", imgThre);
+	
 	
 	 // Get Contours - Biggest  - Step 2
 	initialPoints = getContours(imgThre);
+	
+	cv::putText(imgOriginal,
+		"Text to add",
+		cv::Point(35, 35), // Coordinates (Bottom-left corner of the text string in the image)
+		cv::FONT_HERSHEY_COMPLEX_SMALL, // Font
+		1.0, // Scale. 2.0 = 2x bigger
+		cv::Scalar(255, 0, 255), // BGR Color
+		2, // Line Thickness (Optional)
+		cv::LINE_AA);
+
 	drawPoints(initialPoints, cv::Scalar(230, 0, 255));
 	/*
 	docPoints = reorder(initialPoints);
@@ -149,6 +161,23 @@ void main() {
 	imshow("Image Crop", imgCrop);
 	*/
 
+	
+	cv::imshow("Image original", imgOriginal);
+	cv::imshow("Image Step 1 ", imgThre);
 	cv::waitKey(0);
 
 }
+/*
+
+cv::putText(imgOriginal,
+		"Text to add",
+		cv::Point(35, 35), // Coordinates (Bottom-left corner of the text string in the image)
+		cv::FONT_HERSHEY_COMPLEX_SMALL, // Font
+		1.0, // Scale. 2.0 = 2x bigger
+		cv::Scalar(255, 0, 255), // BGR Color
+		2, // Line Thickness (Optional)
+		cv::LINE_AA);
+
+
+
+*/
