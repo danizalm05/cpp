@@ -134,24 +134,24 @@ void main() {
 
 	cv::Scalar color = cv::Scalar(230, 0, 255);
 	for (int i = 0; i < docPoints.size(); i++) {
-	   circle(imgOriginal, docPoints[i], 10, color, cv::FILLED);
-	   putText(imgOriginal, std::to_string(i), docPoints[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
+	   circle(imgThre, docPoints[i], 10, color, cv::FILLED);
+	   putText(imgThre, std::to_string(i), docPoints[i], cv::FONT_HERSHEY_PLAIN, 4, color, 4);
 	}
 
 	
 	// Warp - Step 3 03:36:00
 
-	/*imgWarp = getWarp(imgOriginal, docPoints, w, h);
-
+	imgWarp = getWarp(imgOriginal, docPoints, w, h);
+	 
 	//Crop - Step 4
 	int cropVal = 5;
-	Rect roi(cropVal, cropVal, w - (2 * cropVal), h - (2 * cropVal));
+	cv::Rect roi(cropVal, cropVal, w - (2 * cropVal), h - (2 * cropVal));
 	imgCrop = imgWarp(roi);
 
 	 
 	//imshow("Image Warp", imgWarp);
 	imshow("Image Crop", imgCrop);
-	*/
+	 
 
 	
 	cv::imshow("Image original", imgOriginal);
