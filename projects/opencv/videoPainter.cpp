@@ -21,11 +21,11 @@ vector<vector<int>> newPoints;  // to store all points
 /////////////////////  COLOR VALUES ////////////////////////////////
 						    // hmin, smin, vmin hmax, smax, vmax
 vector<vector<int>> myColors{ {62, 152, 47, 145, 252, 255}, // blue
-					          {22, 62, 79, 81,  223, 255} // yellow
+					          {68, 72, 156, 102,  126, 255} // green
                             };
 vector<Scalar> myColorValues{ 
 	                          {220,  50   ,0}, // blue
-			    		      {0,255 ,255}  // yellow 
+			    		      {0,255 ,0}  // green 
                             }; 	
 ////////////////////////////////////////////////////////////////////
 
