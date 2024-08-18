@@ -36,7 +36,7 @@ int main() {
 
          //C:\Users\rockman\source\repos
 
-       // string user_name = "gilfm"; "rockman";
+    // string user_name = "gilfm"; "rockman";
     string user_name = "gilfm";
     string image_name = "lena.jpg";// "2.jpg";
     string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/" + image_name;
