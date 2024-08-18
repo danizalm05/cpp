@@ -21,7 +21,7 @@ int main( int argc, const char** argv )
 	// show images
 	imshow("Lena", lena);
 	
-	// Display Overlay   dosn't work needs QT
+	// Display Overlay
 	displayOverlay("Lena", "Overlay 5secs", 5000);
 
 	// Display Status Bar
