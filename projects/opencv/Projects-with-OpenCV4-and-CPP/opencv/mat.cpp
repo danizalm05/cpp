@@ -49,12 +49,11 @@ int main() {
 	cv::waitKey(0); // wait for a key pressed
 
 	// read an image
-	std::string user_name = "rockman";
-	std::string image_name = "2.jpg";
+	std::string user_name = "gilfm"; //"gilfm"; "rockman";
+	std::string image_name = "puppy.bmp";
 	
-
-	std::string path = "C:/Users/" + user_name + "/Pictures/Saved Pictures/" + image_name;
-
+   std::string path = "C:/Users/" + user_name + "/Pictures/opencv/" + image_name;
+ 
 	cv::Mat image3=  cv::imread(path);
 
 	// all these images point to the same data block
