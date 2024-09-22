@@ -19,7 +19,7 @@ The size of the matrix itself may vary from image to image
 //C:\Users\rockman\source\repos
 
    // string user_name = "gilfm"; "rockman";
-std::string user_name = "gilfm";
+std::string user_name = "rockman";
 std::string image_name = "1.jpg";
 
 
@@ -92,9 +92,54 @@ int main()
     
     */
    
-   M.create(4,4, CV_8UC(2));//4X4 each item 2 digit 
+   M.create(4,4, CV_8UC(2));//4X4 matrix each cell holds 2 digit 
    std::cout << "M = " << std::endl << " " << M << std::endl << std::endl;
+   cv::Mat E2 = cv::Mat::eye(4, 4, CV_64F);
+    std::cout << "E2 = " << std::endl << " " << E2 << std::endl << std::endl;
+   cv::Mat O = cv::Mat::ones(2, 2, CV_32F);
+    std::cout << "O = " << std::endl << " " << O << std::endl << std::endl;
+   cv::Mat Z = cv::Mat::zeros(3, 3, CV_8UC1);
+   std::cout << "Z = " << std::endl << " " << Z << std::endl << std::endl;
+   
 
-    cv::waitKey(0);
+   //For small matrices you may use comma separated initializers or initializer lists (C++11 support is required in the last case):
+   cv::Mat C2 = (cv::Mat_<double>(3, 3) << 0, -1, 0, -1, 5, -1, 0, -1, 0);
+   std::cout << "C = " << std::endl << " " << C2 << std::endl << std::endl;
+   C2 = (cv::Mat_<double>({ 0, -1, 0, -1, 5, -1, 0, -1, 0 })).reshape(3);
+   std::cout << "C2 = " << std::endl << " " << C2 << std::endl << std::endl;
+
+   //Create a new header for an existing Mat objec
+   cv::Mat RowClone = C2.row(1).clone();
+   std::cout << "RowClone = " << std::endl << " " << RowClone << std::endl << std::endl;
+
+   cv::Mat R = cv::Mat(3, 2, CV_8UC3);
+   randu(R, cv::Scalar::all(0), cv::Scalar::all(255));
+   std::cout << "R = " << std::endl << " " <<R << std::endl << std::endl;
+
+   //Output formatting
+   std::cout << "R (default) = " << std::endl << R << std::endl << std::endl;
+   //          ---- Output of other common items ----
+   cv::Point2f P(5, 1);
+   std::cout << "Point (2D) = " << P << std::endl << std::endl;
+
+   cv::Point3f P3f(2, 6, 7);
+   std::cout << "Point (3D) = " << P3f << std::endl << std::endl;
+
+   //std::vector via cv::Mat
+   std::vector<float> v;
+   v.push_back((float)CV_PI);   v.push_back(2);    v.push_back(3.01f);
+   std::cout << "Vector of floats via Mat = " << cv::Mat(v) << std::endl << std::endl;
+
+   //std::vector of points
+   std::vector<cv::Point2f> vPoints(20);
+   for (size_t i = 0; i < vPoints.size(); ++i)
+       vPoints[i] = cv::Point2f((float)(i * 5), (float)(i % 7));
+   std::cout << "A vector of 2D Points = " << vPoints << std::endl << std::endl;
+
+
+
+
+
+   cv::waitKey(0);
     return 0;
 }
